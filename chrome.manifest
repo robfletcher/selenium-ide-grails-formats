@@ -1,0 +1,5 @@
+content grails  chrome/content/
+ 
+locale  grails  en-US chrome/locale/en-US/
+ 
+overlay chrome://selenium-ide/content/selenium-ide-common.xul chrome://grails/content/view/optionsOverlay.xul

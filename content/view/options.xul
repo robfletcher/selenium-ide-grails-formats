@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+ 
+<!DOCTYPE prefwindow SYSTEM "chrome://preflight/locale/options.dtd">
+ 
+<prefwindow id="grails-prefs"
+      title="Grails Settings" 
+      width="520"
+      height="200"
+      xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+ 
+  <!-- Pref Pane --> 
+  <prefpane id="grails-panel" label="Grails Settings"> 
+ 
+    <preferences>
+      <preference id="pref_junit4" name="extensions.selenium-ide.grails.junit4" type="bool" />
+    </preferences>
+ 
+    <tabbox>  
+      <tabs>
+        <tab label="General"/>
+      </tabs>
+      <tabpanels flex="1" >
+        <tabpanel>
+          <vbox flex="1">
+            <hbox align="center">
+              <label control="name" value="&junit4;"/>
+              <checkbox preference="pref_junit4" id="junit4" />
+            </hbox>
+            <spacer height="100" />
+          </vbox>
+        </tabpanel>
+      </tabpanels>
+    </tabbox>
+  </prefpane>
+</prefwindow>

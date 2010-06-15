@@ -8,7 +8,7 @@
     <html:script type="application/javascript">
         var ide_api = new API();
         ide_api.addPlugin("grails-formatters@grails.org");
-        ide_api.addPluginProvidedFormatter("grails-junit3", "Grails Selenium RC (JUnit 3)", "chrome://webdriver-backed-formatters/content/formats/grails-junit3.js");
-        ide_api.addPluginProvidedFormatter("grails-junit4", "Grails Selenium RC (JUnit 4)", "chrome://webdriver-backed-formatters/content/formats/grails-junit4.js");
+        ide_api.addPluginProvidedFormatter("grails-junit3", "Grails Selenium RC (JUnit 3)", "chrome://grails-formatters/content/formats/grails-junit3.js");
+        ide_api.addPluginProvidedFormatter("grails-junit4", "Grails Selenium RC (JUnit 4)", "chrome://grails-formatters/content/formats/grails-junit4.js");
     </html:script>
 </overlay>

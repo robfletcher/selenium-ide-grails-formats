@@ -1,6 +1,6 @@
 #!/bin/bash
  
-APP_NAME=selenium-ide-grails-formats          # short-name, jar and xpi files name. Must be lowercase with no spaces
+APP_NAME=grails-formatters          # short-name, jar and xpi files name. Must be lowercase with no spaces
 CHROME_PROVIDERS="content"  # which chrome providers we have (space-separated list)
 ROOT_DIRS="defaults"         # ...and these directories       (space separated list)
  
@@ -11,12 +11,9 @@ TMP_DIR=build
 rm -f $APP_NAME.jar $APP_NAME.xpi
 rm -rf $TMP_DIR
  
-mkdir -p $TMP_DIR/chrome/content
+mkdir -p $TMP_DIR/chrome/content/formats
  
-cp -v -R content $TMP_DIR/chrome
-cp -v -R locale $TMP_DIR/chrome
-cp -v -R skin $TMP_DIR/chrome
-cp -v -R defaults $TMP_DIR
+cp -v -R chrome/content $TMP_DIR/chrome
 cp -v install.rdf $TMP_DIR
 cp -v chrome.manifest $TMP_DIR
  

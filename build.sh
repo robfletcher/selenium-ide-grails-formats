@@ -1,6 +1,7 @@
 #!/bin/bash
  
 APP_NAME=grails-formatters          # short-name, jar and xpi files name. Must be lowercase with no spaces
+APP_VERSION=1.0
 CHROME_PROVIDERS="content"  # which chrome providers we have (space-separated list)
 ROOT_DIRS="defaults"         # ...and these directories       (space separated list)
  
@@ -20,6 +21,6 @@ cp -v chrome.manifest $TMP_DIR
 # generate the XPI file
 cd $TMP_DIR
 echo "Generating $APP_NAME.xpi..."
-zip -r ../$APP_NAME.xpi *
+zip -r ../$APP_NAME-$APP_VERSION.xpi *
  
 cd "$ROOT_DIR"
